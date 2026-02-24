@@ -17,7 +17,7 @@ export const projects: TProject[] = [
       "OpenAI",
       "Material UI",
     ],
-    clientProject:true
+    clientProject: true,
   },
   {
     id: 2,
@@ -26,7 +26,7 @@ export const projects: TProject[] = [
       "An unified portal to manage employee visits and track key client metrics, including SLAs, SOPs, and incident reports.",
     image: "/gp.png",
     technologies: ["React", "Node", "MySQL"],
-    clientProject:true
+    clientProject: true,
   },
   {
     id: 3,
@@ -35,7 +35,7 @@ export const projects: TProject[] = [
       "Developed a full-stack application that consolidates data insights from multiple cloud services into a centralized, user-friendly platform.",
     image: "/cloud.png",
     technologies: ["React", "Node", "MongoDB", "Tailwind"],
-    clientProject:true
+    clientProject: true,
   },
   {
     id: 3,
@@ -54,7 +54,8 @@ export const experiences: TExperience[] = [
     position: "Senior Engineer",
     startDate: "Aug 2022",
     endDate: "Present",
-    description: "Description 1",
+    description:
+      "Developed user-centric UI components using React while optimizing backend APIs and database queries to enhance overall system performance. Implemented secure JWT-based authentication mechanisms and contributed to the development of Generative AI tools. Worked within Agile teams, actively participating in code reviews to maintain high code quality and best practices. Deployed applications using Docker containers and cloud infrastructure to ensure scalability, reliability, and efficient production environments.",
   },
 ];
 
@@ -132,4 +133,5 @@ export const hero: THero = {
   image: "/avatar.png",
 };
 
-export const resumeURL ="https://drive.google.com/file/d/10QvdJPP4Xr3T6yomV_06KvcjteCI6lRn/view?usp=sharing"
+export const resumeURL =
+  "https://drive.google.com/file/d/10QvdJPP4Xr3T6yomV_06KvcjteCI6lRn/view?usp=sharing";
