@@ -131,3 +131,5 @@ export const hero: THero = {
   ],
   image: "/avatar.png",
 };
+
+export const resumeURL ="https://drive.google.com/file/d/10QvdJPP4Xr3T6yomV_06KvcjteCI6lRn/view?usp=sharing"

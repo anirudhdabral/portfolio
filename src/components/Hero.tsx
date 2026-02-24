@@ -1,6 +1,6 @@
 import { Avatar, useMediaQuery } from "@mui/material";
 import { motion } from "framer-motion";
-import { hero } from "../utils/constants";
+import { hero, resumeURL } from "../utils/constants";
 
 export function Hero() {
   if (!hero) return null;
@@ -42,17 +42,17 @@ export function Hero() {
               {hero.socials.map((social) => (
                 <SocialLink
                   key={social.id}
-                  href={social.url}v
+                  href={social.url}
                   icon={<social.icon size={22} />}
                 />
               ))}
               <a
-                href={"href"}
+                href={resumeURL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 rounded-full bg-muted text-muted-foreground hover:bg-primary hover:text-primary-foreground hover:shadow-md hover:-translate-y-1 transition-all duration-300"
               >
-               Resume
+                Resume
               </a>
             </div>
           </motion.div>

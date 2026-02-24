@@ -1,6 +1,7 @@
-import { Menu, Tooltip } from "@mui/material";
+import { Tooltip } from "@mui/material";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import { CiMenuBurger } from "react-icons/ci";
 import { MdDarkMode, MdLightMode } from "react-icons/md";
 
 export function Header() {
@@ -85,7 +86,7 @@ export function Header() {
           className="md:hidden p-2 text-foreground"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
-          <Menu open={mobileMenuOpen} />
+          <CiMenuBurger />
         </button>
       </div>
 
