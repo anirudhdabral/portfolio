@@ -90,7 +90,6 @@ export const skills: TSkill[] = [
     category: "Frontend",
   },
   { id: 7, name: "Framer Motion", icon: "SiFramer", category: "Frontend" },
-  { id: 9, name: "Figma", icon: "SiFigma", category: "Frontend" },
   { id: 10, name: "Express.js", icon: "SiExpress", category: "Backend" },
   { id: 11, name: "MongoDB", icon: "SiMongodb", category: "Database" },
   { id: 12, name: "PostgreSQL", icon: "SiPostgresql", category: "Database" },
@@ -99,7 +98,9 @@ export const skills: TSkill[] = [
   { id: 16, name: "Redis", icon: "SiRedis", category: "Backend" },
   { id: 17, name: "Graphql", icon: "SiGraphql", category: "Backend" },
   { id: 8, name: "Git", icon: "SiGit", category: "Others" },
-  { id: 18, name: "OpenAI", icon: "SiOpenai", category: "Others" },
+  { id: 9, name: "Figma", icon: "SiFigma", category: "Others" },
+  { id: 18, name: "Docker", icon: "SiDocker", category: "Others" },
+  { id: 19, name: "OpenAI", icon: "SiOpenai", category: "Others" },
 ];
 
 export const hero: THero = {
