@@ -68,7 +68,7 @@ function ProjectCard({ project, index }: { project: TProject; index: number }) {
         <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors">
           {project.name}
         </h3>
-        <p className="text-muted-foreground text-sm mb-6 flex-grow">
+        <p className="text-muted-foreground text-sm mb-6 flex-grow text-justify">
           {project.description}
         </p>
 

@@ -44,7 +44,7 @@ export const Experience = () => {
                   </span>
                 </div>
 
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-muted-foreground leading-relaxed text-justify">
                   {exp.description}
                 </p>
               </div>
