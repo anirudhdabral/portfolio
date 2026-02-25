@@ -32,7 +32,7 @@ export const projects: TProject[] = [
     id: 3,
     name: "Cloud Monitoring Application",
     description:
-      "Developed a full-stack application that consolidates data insights from multiple cloud services into a centralized, user-friendly platform.",
+      "Developed an application that consolidates data insights from multiple cloud services into a centralized, user-friendly platform.",
     image: "/cloud.png",
     technologies: ["React", "Node", "MongoDB", "Tailwind"],
     clientProject: true,
@@ -40,7 +40,7 @@ export const projects: TProject[] = [
   {
     id: 3,
     name: "TaskStream",
-    description: "A local storage kanban board to manage perssonal tasks.",
+    description: "A minimalist Kanban board that persists tasks locally, designed for personal productivity.",
     image: "/kanban.png",
     link: "https://kanban-app-anirudhdabral.web.app/",
     technologies: ["React", "Tailwind"],
@@ -64,7 +64,7 @@ export const skillCategories: string[] = [
   "Backend",
   "Languages",
   "Database",
-  "Others",
+  "Dev Tools",
 ];
 
 export const skills: TSkill[] = [
@@ -97,10 +97,11 @@ export const skills: TSkill[] = [
   { id: 15, name: "Redux", icon: "SiRedux", category: "Frontend" },
   { id: 16, name: "Redis", icon: "SiRedis", category: "Backend" },
   { id: 17, name: "Graphql", icon: "SiGraphql", category: "Backend" },
-  { id: 8, name: "Git", icon: "SiGit", category: "Others" },
-  { id: 9, name: "Figma", icon: "SiFigma", category: "Others" },
-  { id: 18, name: "Docker", icon: "SiDocker", category: "Others" },
-  { id: 19, name: "OpenAI", icon: "SiOpenai", category: "Others" },
+  { id: 8, name: "Git", icon: "SiGit", category: "Dev Tools" },
+  { id: 9, name: "Figma", icon: "SiFigma", category: "Dev Tools" },
+  { id: 18, name: "Docker", icon: "SiDocker", category: "Dev Tools" },
+  { id: 19, name: "OpenAI", icon: "SiOpenai", category: "Dev Tools" },
+  { id: 20, name: "Apache Kafka", icon: "SiApachekafka", category: "Backend" },
 ];
 
 export const hero: THero = {
@@ -110,7 +111,7 @@ export const hero: THero = {
   passion: "Building beautiful UIs",
   skills: ["React", "Node.js", "TypeScript"],
   description:
-    "I'm a full-stack engineer specializing in building exceptional, high-quality websites and applications with a focus on polished user experiences.",
+    "a full-stack engineer specializing in building exceptional, high-quality websites and applications with a focus on polished user experiences.",
   socials: [
     {
       id: 1,

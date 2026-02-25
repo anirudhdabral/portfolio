@@ -7,8 +7,8 @@ export function Hero() {
   const isSmallScreen = useMediaQuery("(max-width:640px)");
   return (
     <section id="about" className="min-h-screen flex items-center pt-20 pb-12">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        <div className="space-y-8">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ">
+        <div className="space-y-5 md:space-y-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -17,7 +17,7 @@ export function Hero() {
             <span className="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4 border border-primary/20">
               Open to Opportunities
             </span>
-            <h1 className="text-5xl md:text-7xl font-bold leading-tight">
+            <h1 className="text-4xl md:text-7xl font-bold leading-tight">
               Crafting <span className="text-gradient">digital</span>{" "}
               experiences that matter.
             </h1>
@@ -27,9 +27,9 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-lg md:text-xl text-muted-foreground max-w-lg leading-relaxed"
+            className="text-lg md:text-xl text-muted-foreground max-w-lg leading-relaxed text-justify"
           >
-            {hero.description}
+            Hi, I'm <span className="text-primary font-bold">Anirudh Dabral</span>{", "}{hero.description}
           </motion.p>
 
           <motion.div
@@ -73,8 +73,9 @@ export function Hero() {
               <div className="w-3 h-3 rounded-full bg-red-400" />
               <div className="w-3 h-3 rounded-full bg-yellow-400" />
               <div className="w-3 h-3 rounded-full bg-green-400" />
+              <span className="text-muted-foreground text-sm">{" "}profile.ts</span>
             </div>
-            <div className="flex p-8 pt-20 pr-10 justify-between flex-wrap gap-6">
+            <div className="flex p-8 pt-20 justify-between flex-wrap gap-6">
               <div className="font-mono text-sm text-muted-foreground/80">
                 <p>
                   <span className="text-primary">const</span>{" "}
@@ -110,9 +111,10 @@ export function Hero() {
                 alt="Anirudh"
                 src="/avatar.png"
                 sx={{
-                  border: "1px solid #ccc",
+                  border: "0.5px solid #ccc",
+                  mx: "auto",
                   ...(isSmallScreen
-                    ? { width: 150, height: 150 }
+                    ? { width: 100, height: 100 }
                     : { width: 200, height: 200 }),
                 }}
               />
