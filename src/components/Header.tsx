@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { Drawer } from "@mui/material";
 import { useEffect, useState } from "react";
 import { CiMenuBurger } from "react-icons/ci";
 import { MdDarkMode, MdLightMode } from "react-icons/md";
@@ -112,57 +112,60 @@ export function Header() {
           <CiMenuBurger />
         </button>
       </div>
-
       {/* Mobile Nav */}
-      {mobileMenuOpen && (
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="md:hidden absolute top-full left-0 right-0 border-t border-border"
-        >
-          <div className="flex flex-col px-6 py-4 gap-4 glass-nav glass-nav">
-            {navLinks.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                onClick={() => setMobileMenuOpen(false)}
-                className="text-lg font-medium text-foreground py-2 border-b border-border/50"
-              >
-                {link.name}
-              </a>
-            ))}
-            <button
-              onClick={toggleTheme}
-              className="relative flex items-center w-24 h-10 p-1 bg-muted rounded-full transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-primary/20"
-              aria-label="Toggle theme"
+      <Drawer
+        open={mobileMenuOpen}
+        anchor={"top"}
+        onClose={() => setMobileMenuOpen(false)}
+        sx={{
+          "& .MuiDrawer-paper": {
+            backgroundColor: "transparent",
+            boxShadow: "none",
+          },
+        }}
+      >
+        <div className="flex flex-col px-6 py-4 gap-4 glass-nav glass-nav">
+          {navLinks.map((link) => (
+            <a
+              key={link.name}
+              href={link.href}
+              onClick={() => setMobileMenuOpen(false)}
+              className="text-lg font-medium text-foreground py-2 border-b border-border/50"
             >
-              <div
-                className={`absolute w-9 h-8 bg-background rounded-full shadow-sm transition-transform duration-300 ease-in-out transform ${
-                  isDark ? "translate-x-13" : "translate-x-0"
-                }`}
-              />
-              <div className="relative flex justify-between items-center w-full px-2 z-10 pointer-events-none">
-                {!isDark && (
-                  <div
-                    className={`flex items-center justify-between gap-1 text-[10px] font-bold uppercase tracking-wider transition-colors duration-300 text-foreground w-100`}
-                  >
-                    <MdLightMode size={20} className="text-yellow-500" />
-                    <span>Light</span>
-                  </div>
-                )}
-                {isDark && (
-                  <div
-                    className={`flex items-center justify-between gap-1 text-[10px] font-bold uppercase tracking-wider transition-colors duration-300 text-foreground w-100`}
-                  >
-                    <span>Dark</span>
-                    <MdDarkMode size={20} />
-                  </div>
-                )}
-              </div>
-            </button>
-          </div>
-        </motion.div>
-      )}
+              {link.name}
+            </a>
+          ))}
+          <button
+            onClick={toggleTheme}
+            className="relative flex items-center w-24 h-10 p-1 bg-muted rounded-full transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-primary/20"
+            aria-label="Toggle theme"
+          >
+            <div
+              className={`absolute w-9 h-8 bg-background rounded-full shadow-sm transition-transform duration-300 ease-in-out transform ${
+                isDark ? "translate-x-13" : "translate-x-0"
+              }`}
+            />
+            <div className="relative flex justify-between items-center w-full px-2 z-10 pointer-events-none">
+              {!isDark && (
+                <div
+                  className={`flex items-center justify-between gap-1 text-[10px] font-bold uppercase tracking-wider transition-colors duration-300 text-foreground w-100`}
+                >
+                  <MdLightMode size={20} className="text-yellow-500" />
+                  <span>Light</span>
+                </div>
+              )}
+              {isDark && (
+                <div
+                  className={`flex items-center justify-between gap-1 text-[10px] font-bold uppercase tracking-wider transition-colors duration-300 text-foreground w-100`}
+                >
+                  <span>Dark</span>
+                  <MdDarkMode size={20} />
+                </div>
+              )}
+            </div>
+          </button>
+        </div>
+      </Drawer>
     </header>
   );
 }
