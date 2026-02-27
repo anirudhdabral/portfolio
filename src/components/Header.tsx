@@ -52,7 +52,9 @@ export function Header() {
           href="#"
           className="text-2xl font-bold font-display tracking-tighter hover:text-primary transition-colors"
         >
-          Dev<span className="text-primary">Portfolio</span>
+          <span className="text-primary">Anirudh</span>
+          <span className="text-muted-foreground">&nbsp;|&nbsp;</span>Sofware
+          Engineer
         </a>
 
         {/* Desktop Nav */}

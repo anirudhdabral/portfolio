@@ -111,7 +111,7 @@ export const hero: THero = {
   passion: "Building beautiful UIs",
   skills: ["React", "Node.js", "TypeScript"],
   description:
-    "a full-stack engineer specializing in building exceptional, high-quality websites and applications with a focus on polished user experiences.",
+    "I'm a full-stack engineer specializing in building exceptional, high-quality websites and applications with a focus on polished user experiences.",
   socials: [
     {
       id: 1,

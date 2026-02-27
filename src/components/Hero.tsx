@@ -29,7 +29,7 @@ export function Hero() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-lg md:text-xl text-muted-foreground max-w-lg leading-relaxed text-justify"
           >
-            Hi, I'm <span className="text-primary font-bold">Anirudh Dabral</span>{", "}{hero.description}
+            <span className="text-primary font-bold">Hello</span>{", "}{hero.description}
           </motion.p>
 
           <motion.div
