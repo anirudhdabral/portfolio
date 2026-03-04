@@ -32,13 +32,21 @@ export const projects: TProject[] = [
     id: 3,
     name: "Cloud Monitoring Application",
     description:
-      "Developed an application that consolidates data insights from multiple cloud services into a centralized, user-friendly platform.",
+      "An application that consolidates data insights from multiple cloud services into a centralized, user-friendly platform.",
     image: "/cloud.png",
     technologies: ["React", "Node", "MongoDB", "Tailwind"],
     clientProject: true,
   },
   {
     id: 3,
+    name: "SysDesign",
+    description: "A visual system design platform that lets users build, connect, and manage architecture through interactive node-based diagrams. Designed for clarity and speed, it enables engineers to model workflows, system components, and data flow in a structured, intuitive way.",
+    image: "/system-design.png",
+    link: "https://sys-design-nu.vercel.app/",
+    technologies: ["Next.JS", "Material UI", "GraphQL", "MongoDB"],
+  },
+  {
+    id: 4,
     name: "TaskStream",
     description: "A minimalist Kanban board that persists tasks locally, designed for personal productivity.",
     image: "/kanban.png",
