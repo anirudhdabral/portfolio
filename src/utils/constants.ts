@@ -40,15 +40,26 @@ export const projects: TProject[] = [
   {
     id: 3,
     name: "SysDesign",
-    description: "A visual system design platform that lets users build, connect, and manage architecture through interactive node-based diagrams. Designed for clarity and speed, it enables engineers to model workflows, system components, and data flow in a structured, intuitive way.",
+    description:
+      "A visual system design platform that lets users build, connect, and manage architecture through interactive node-based diagrams. Designed for clarity and speed, it enables engineers to model workflows, system components, and data flow in a structured, intuitive way.",
     image: "/system-design.png",
     link: "https://sys-design-nu.vercel.app/",
     technologies: ["Next.JS", "Material UI", "GraphQL", "MongoDB"],
   },
   {
     id: 4,
+    name: "Streakly",
+    description:
+      "Streakly is an offline habit tracker with flexible schedules, calendar insights, and privacy-first local storage. It's installable on Android as a PWA, vibe-coded with Codex as a smart AI workflow, and every Codex action was thoroughly reviewed.",
+    image: "/streakly.png",
+    link: "https://streakly-phi.vercel.app/",
+    technologies: ["Next.JS", "Codex", "PWA"],
+  },
+  {
+    id: 5,
     name: "TaskStream",
-    description: "A minimalist Kanban board that persists tasks locally, designed for personal productivity.",
+    description:
+      "A minimalist Kanban board that persists tasks locally, designed for personal productivity.",
     image: "/kanban.png",
     link: "https://kanban-app-anirudhdabral.web.app/",
     technologies: ["React", "Tailwind"],
