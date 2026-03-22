@@ -38,7 +38,7 @@ export const projects: TProject[] = [
     clientProject: true,
   },
   {
-    id: 3,
+    id: 4,
     name: "SysDesign",
     description:
       "A visual system design platform that lets users build, connect, and manage architecture through interactive node-based diagrams. Designed for clarity and speed, it enables engineers to model workflows, system components, and data flow in a structured, intuitive way.",
@@ -47,7 +47,16 @@ export const projects: TProject[] = [
     technologies: ["Next.JS", "Material UI", "GraphQL", "MongoDB"],
   },
   {
-    id: 4,
+    id: 5,
+    name: "Bil.",
+    description:
+      "A web app for managing physical household bills in one place. It helps users organize bills by home and category, track them month by month, share access with other household members, and keep bill records easier to manage and review.",
+    image: "/bil.png",
+    link: "https://bil-nine.vercel.app/",
+    technologies: ["Next.JS", "PWA", "Tailwind", "MongoDB"],
+  },
+  {
+    id: 6,
     name: "Streakly",
     description:
       "Streakly is an offline habit tracker with flexible schedules, calendar insights, and privacy-first local storage. It's installable on Android as a PWA, vibe-coded with Codex as a smart AI workflow, and every Codex action was thoroughly reviewed.",
@@ -56,7 +65,7 @@ export const projects: TProject[] = [
     technologies: ["Next.JS", "Codex", "PWA"],
   },
   {
-    id: 5,
+    id: 7,
     name: "TaskStream",
     description:
       "A minimalist Kanban board that persists tasks locally, designed for personal productivity.",
